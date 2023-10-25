@@ -54,7 +54,7 @@ export default function WeatherChart({temperature,weatherCode,days}) {
     const { path, alt } = weatherCodeMapping[code];
   
     return (
-      <img key={code} className="w-auto" src={`../src/assets/static/${path}`} alt={alt} />
+      <img key={code} className="w-auto" src={`../*/assets/static/${path}`} alt={alt} />
     )
 
   })
