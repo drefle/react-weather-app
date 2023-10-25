@@ -80,7 +80,7 @@ export default function WeatherCard() {
   // Appel API afin d'avoir une liste de ville avec leur longitude et leur latitude
   useEffect(()=>{
     setAPICoordinates({...APICoordinates,loading:true})
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=ffabfc8eb9e48f902258697fde12df97`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=ffabfc8eb9e48f902258697fde12df97`)
     .then(res=>{
       if(!res.ok)throw new Error("")
       return res.json()
